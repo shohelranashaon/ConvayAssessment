@@ -32,6 +32,7 @@ test.describe("Convay Meeting Automation", () => {
         
         // Get the new page (meeting page in new tab)
         const meetingPage = await newPagePromise;
+       
         
         // Wait for new page to load
         await meetingPage.waitForLoadState('networkidle');
@@ -42,6 +43,7 @@ test.describe("Convay Meeting Automation", () => {
         
         // Click invite button in the new tab
         await meetingInNewTab.buttonInviteOthers();
+        await meetingInNewTab.buttonCopyLink();
         await meetingPage.pause();
 
      });
