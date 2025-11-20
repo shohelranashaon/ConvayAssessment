@@ -1,17 +1,19 @@
 import { SignIn } from '../pages/signInPage';
 import { test } from '@playwright/test';
 import { Home } from '../pages/homePage';
+import { Meeting } from '../pages/meetingPage';
 
 test.describe.configure({ mode: "serial" });
 
 test.describe("Convay Meeting Automation", () => {
-  let context, page, signIn,home;
+  let context, page, signIn,home,meeting;
 
   test.beforeAll(async ({ browser }) => {
     context = await browser.newContext();
     page = await context.newPage();
     signIn = new SignIn(page);
     home = new  Home(page);
+    meeting = new Meeting(page);
     await signIn.openUrl();
     await signIn.signInPageLink();
     
@@ -24,12 +26,10 @@ test.describe("Convay Meeting Automation", () => {
         await signIn.buttonSignIn();
         await home.buttonStartNow();
         await home.clickButtonStart();
-       // await home.buttonInviteOthers();
+       // await meeting.buttonInviteOthers();
         await page.pause();
-        await page.pause();
+
      });
-
-
 
 
 

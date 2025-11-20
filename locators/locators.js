@@ -15,11 +15,6 @@ export default class Locators{
          this.startButton = this.page.locator("//button[@id='startButton']");
 //Metting Page locator
          this.inviteOthers = this.page.locator("//span[@class='css-1wulk6c-textWithIcon']");
-         
-
-
-
-       
     }
       
 
