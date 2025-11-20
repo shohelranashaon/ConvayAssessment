@@ -4,17 +4,13 @@ export class Meeting{
         this.page = page;
         this.locator = new Locators(page);
     }
-    //  async buttonInviteOthers(){
-    //     await this.locator.inviteOthers.click();
-    // }
-
-    // async clickButtonStart(){
-    //     await this.locator.startButton.click();
-    // }
-
+    
     async buttonInviteOthers(){
-    await this.locator.inviteOthers.waitFor({ state: 'visible', timeout: 10000 });
-    await this.locator.inviteOthers.click();
-}
+        await this.page.waitForLoadState('networkidle');
+        await this.page.waitForTimeout(3000);
+        await this.locator.inviteOthers.waitFor({ state: 'visible', timeout: 15000 });
+        await this.locator.inviteOthers.scrollIntoViewIfNeeded();
+        await this.locator.inviteOthers.click();
+    }
 
 }

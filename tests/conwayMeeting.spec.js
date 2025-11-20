@@ -25,9 +25,24 @@ test.describe("Convay Meeting Automation", () => {
         await signIn.enterPassword("Abcd1234+");
         await signIn.buttonSignIn();
         await home.buttonStartNow();
+        
+        // Wait for new tab/page to open when meeting starts
+        const newPagePromise = context.waitForEvent('page', { timeout: 5000 });
         await home.clickButtonStart();
-       // await meeting.buttonInviteOthers();
-        await page.pause();
+        
+        // Get the new page (meeting page in new tab)
+        const meetingPage = await newPagePromise;
+        
+        // Wait for new page to load
+        await meetingPage.waitForLoadState('networkidle');
+        await meetingPage.waitForTimeout(3000);
+        
+        // Create meeting object for the new page
+        const meetingInNewTab = new Meeting(meetingPage);
+        
+        // Click invite button in the new tab
+        await meetingInNewTab.buttonInviteOthers();
+        await meetingPage.pause();
 
      });
 
