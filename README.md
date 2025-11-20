@@ -4,7 +4,7 @@ Automation for Conway meeting platform using Playwright. Covers host meeting cre
 # Convay Meeting Automation
 
 Automation Testing on the [Convay](https://www.convay.com/)  
-This project automates login, add-to-cart, and checkout flows using **Playwright**, **JavaScript**, and the **Page Object Model (POM)** pattern.
+This project automates using **Playwright**, **JavaScript**, and the **Page Object Model (POM)** pattern.
 
 ---
 
