@@ -67,7 +67,7 @@ npx playwright test --headed
 ```bash
 npm i allure-playwright --save-dev
 ```
-For Allure Command Line
+-For Allure Command Line
 ```bash
 npm i allure-commandline --save-dev
 ```
