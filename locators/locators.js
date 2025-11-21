@@ -13,11 +13,16 @@ export default class Locators{
 //Home Page locator
          this.startNowButton = this.page.locator("//button[@class='btn-convay-host']");
          this.startButton = this.page.locator("//button[@id='startButton']");
-//Metting Page locator
+//Meeting Page locator
          this.inviteOthers = this.page.locator("//span[@class='css-1wulk6c-textWithIcon']");
          this.copyLinkButton = this.page.locator("//div[@class='meeting-link-url-copy']//div[@class='jitsi-icon jitsi-icon-default ']//*[name()='svg']");
          this.enterName =this.page.locator("//input[@placeholder='Enter your name']");
          this.continueButton = this.page.locator("//button[@id='startButton']");
+
+//Mic Control locators (improved)
+         this.micButton = this.page.locator("div[aria-label*='microphone'], button[aria-label*='microphone']");
+         this.micUnmuteButton = this.page.locator("[aria-label*='Unmute microphone'], [aria-label*='unmute']");
+         this.micMuteButton = this.page.locator("[aria-label*='Mute microphone'], [aria-label*='mute']:not([aria-label*='unmute'])");
     }
       
 

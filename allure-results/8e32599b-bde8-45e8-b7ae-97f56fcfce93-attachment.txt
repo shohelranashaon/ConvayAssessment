@@ -1,0 +1,2 @@
+Mic status: unknown
+Mic toggled successfully

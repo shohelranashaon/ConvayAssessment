@@ -1,0 +1,4 @@
+Permission: Microphone permission: granted
+Mic Test: Mic working. Toggled from muted to unmuted
+✅ MIC TEST PASSED
+   muted → unmuted → muted

@@ -1,0 +1,156 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - region "We value your privacy" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Close" [ref=e4] [cursor=pointer]:
+        - img "Close" [ref=e5]
+      - generic [ref=e6]:
+        - heading "We value your privacy" [level=1] [ref=e7]
+        - generic [ref=e8]:
+          - paragraph [ref=e10]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+          - generic [ref=e11]:
+            - button "Customize" [ref=e12] [cursor=pointer]
+            - button "Reject All" [ref=e13] [cursor=pointer]
+            - button "Accept All" [ref=e14] [cursor=pointer]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - img [ref=e19] [cursor=pointer]
+      - generic [ref=e21]:
+        - link "SO Shohel's Organization" [ref=e23] [cursor=pointer]:
+          - /url: /home
+          - generic [ref=e24]: SO
+          - generic [ref=e25]: Shohel's Organization
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "Home" [ref=e29] [cursor=pointer]:
+              - /url: /home
+              - img [ref=e30]
+              - text: Home
+          - listitem [ref=e33]:
+            - link "Meeting Management" [ref=e34] [cursor=pointer]:
+              - /url: /meeting-management
+              - img [ref=e35]
+              - text: Meeting Management
+          - listitem [ref=e37] [cursor=pointer]:
+            - generic [ref=e38]:
+              - img [ref=e39]
+              - generic [ref=e43]: Admin Settings
+              - img [ref=e45]
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "Manage Users" [ref=e49]:
+                  - /url: /user-management
+              - listitem [ref=e50]:
+                - link "Manage Organization" [ref=e51]:
+                  - /url: /organization
+    - generic [ref=e52]:
+      - navigation [ref=e53]:
+        - list [ref=e55]:
+          - listitem [ref=e56] [cursor=pointer]:
+            - generic [ref=e57]:
+              - generic [ref=e59]: SR
+              - generic [ref=e60]:
+                - text: Shohel Rana Shaon
+                - img [ref=e61]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - heading "Convay Host" [level=2] [ref=e69]
+            - generic [ref=e70]:
+              - generic [ref=e71]: PMI
+              - generic [ref=e72]: 8666 2335 3474
+            - paragraph [ref=e73]: Schedule or Start an Instant Meeting
+            - generic [ref=e74]:
+              - link [ref=e75] [cursor=pointer]:
+                - /url: /calendar
+                - img [ref=e76]
+              - img [ref=e82] [cursor=pointer]
+              - img [ref=e87] [cursor=pointer]
+            - button "Start Now" [active] [ref=e100] [cursor=pointer]
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - img [ref=e105] [cursor=pointer]
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - img [ref=e112]
+                    - generic [ref=e117]:
+                      - img [ref=e119] [cursor=pointer]
+                      - img [ref=e132] [cursor=pointer]
+                  - generic [ref=e141]:
+                    - textbox "Enter your name" [ref=e143]: Shohel Rana Shaon
+                    - button "Start" [disabled] [ref=e144]
+                - list [ref=e146]:
+                  - listitem [ref=e147]:
+                    - img [ref=e150] [cursor=pointer]
+                  - listitem [ref=e156]:
+                    - img [ref=e159] [cursor=pointer]
+              - generic [ref=e168]:
+                - heading "Host Control Settings" [level=2] [ref=e169]
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - generic [ref=e172]: Initiate Meeting with
+                    - generic [ref=e174] [cursor=pointer]:
+                      - radio "My Personal Meeting ID(PMI)- 8666 2335 3474" [checked] [ref=e175]
+                      - generic [ref=e176]: My Personal Meeting ID(PMI)- 8666 2335 3474
+                  - generic [ref=e179] [cursor=pointer]:
+                    - radio "Auto Generated Meeting ID" [ref=e180]
+                    - generic [ref=e182]: Auto Generated Meeting ID
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: Security Settings
+                    - generic [ref=e186] [cursor=pointer]:
+                      - checkbox "Meeting Password 525211" [checked] [ref=e187]
+                      - generic [ref=e188]:
+                        - generic [ref=e189]: Meeting Password
+                        - textbox [ref=e190]: "525211"
+                  - generic [ref=e193] [cursor=pointer]:
+                    - checkbox "Allow only Convay logged in users" [ref=e194]
+                    - generic [ref=e196]: Allow only Convay logged in users
+                  - generic [ref=e199] [cursor=pointer]:
+                    - checkbox "Allow specific domains" [ref=e200]
+                    - generic [ref=e202]: Allow specific domains
+                  - generic [ref=e205] [cursor=pointer]:
+                    - checkbox "Allow specific countries" [ref=e206]
+                    - generic [ref=e208]: Allow specific countries
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: Meeting Settings
+                    - generic [ref=e212] [cursor=pointer]:
+                      - checkbox "Enable waiting room" [ref=e213]
+                      - generic [ref=e215]: Enable waiting room
+                  - generic [ref=e216]:
+                    - generic [ref=e217]: Host & People Activity Settings
+                    - generic [ref=e219] [cursor=pointer]:
+                      - checkbox "Can unmute themselves" [checked] [ref=e220]
+                      - generic [ref=e222]: Can unmute themselves
+                  - generic [ref=e225] [cursor=pointer]:
+                    - checkbox "Only hosts can share screen" [ref=e226]
+                    - generic [ref=e228]: Only hosts can share screen
+                  - generic [ref=e231] [cursor=pointer]:
+                    - checkbox "Allow to rename people by themselves during meeting" [checked] [ref=e232]
+                    - generic [ref=e234]: Allow to rename people by themselves during meeting
+                  - generic [ref=e237] [cursor=pointer]:
+                    - checkbox "Notify all entry and leave sound" [checked] [ref=e238]
+                    - generic [ref=e240]: Notify all entry and leave sound
+          - generic [ref=e241]:
+            - generic [ref=e242]: +
+            - paragraph [ref=e243]: You can join a meeting with meeting ID or URL
+            - generic [ref=e244] [cursor=pointer]: Join
+        - generic [ref=e247]:
+          - generic [ref=e248]: Upcoming Meetings
+          - generic [ref=e253]: No Upcoming meeting!
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - link "Open Scheduler" [ref=e256] [cursor=pointer]:
+              - /url: /calendar/scheduler
+              - generic [ref=e257]: Open Scheduler
+            - generic [ref=e258]:
+              - generic [ref=e259]: "2025"
+              - generic [ref=e260]: "21"
+              - generic [ref=e261]:
+                - text: November
+                - text: Friday
+          - generic [ref=e262]:
+            - generic [ref=e263]: Invitations
+            - generic [ref=e266]: You have no invitation!
+```

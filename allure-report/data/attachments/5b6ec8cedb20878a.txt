@@ -1,0 +1,11 @@
+🎤 Starting mic functionality test...
+Permission Check: Microphone permission: granted
+=== Debugging Mic Elements ===
+Total buttons found: 1
+Found 1 elements with pattern: div[aria-label*="microphone"]
+  First element - aria-label: "Connecting your microphone", title: "null"
+Unmute mic count: 0, Mute mic count: 0
+=== End Debug ===
+Mic Test: Mic button not found or status unknown
+❌ MIC TEST FAILED
+   Reason: Mic button not found or status unknown
