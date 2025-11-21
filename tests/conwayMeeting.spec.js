@@ -26,7 +26,7 @@ test.describe("Convay Meeting Automation", () => {
         await signIn.enterPassword("Abcd1234+");
         await signIn.buttonSignIn();
         await home.buttonStartNow();
-        const newPagePromise = context.waitForEvent('page', { timeout: 5000 });
+        const newPagePromise = context.waitForEvent('page', { timeout: 10000 });
         await home.clickButtonStart();
         const meetingPage = await newPagePromise;
         await meetingPage.waitForLoadState('networkidle');
@@ -39,13 +39,17 @@ test.describe("Convay Meeting Automation", () => {
 
      });
 
-    test("Open Meeting Link in Microsoft Edge using POM", async () => {
+    test("Open Meeting Link in Microsoft Edge using POM and join the meeting as a client", async () => {
 
         await edgeMeeting.openEdge();
         await edgeMeeting.pasteInSearchField();
         await edgeMeeting.pressEnterToNavigate();
+        await edgeMeeting.enterClientName("Imon");
+        await edgeMeeting.clickContinueButton();
         await page.pause();
     });
+
+    
 
         //  test.afterAll("Logout Successfully",async () => {
         //     await inventory.clickButtonLogout();

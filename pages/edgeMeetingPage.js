@@ -1,3 +1,5 @@
+import Locators from "../locators/locators";
+
 export class EdgeMeetingPage {
     constructor(page, browser) {
         this.page = page;
@@ -5,6 +7,7 @@ export class EdgeMeetingPage {
         this.edgeContext = null;
         this.edgePage = null;
         this.meetingLink = null;
+        this.locator = null; // Will be initialized when edgePage is created
     }
 
     // Store meeting link for later use
@@ -18,6 +21,7 @@ export class EdgeMeetingPage {
     async openEdge() {
         this.edgeContext = await this.browser.newContext();
         this.edgePage = await this.edgeContext.newPage();
+        this.locator = new Locators(this.edgePage); // Initialize locator for edgePage
         return this.edgePage;
     }
     async pasteInSearchField(directLink = null) {
@@ -33,8 +37,17 @@ export class EdgeMeetingPage {
         await this.edgePage.waitForLoadState('networkidle');
         await this.edgePage.waitForTimeout(2000);
     }
+    async enterClientName(name) {
+        await this.edgePage.fill('input[placeholder*="name"]', name);
+    }
 
-    
+    async clickContinueButton() {
+        await this.edgePage.click('button:has-text("Continue"), button:has-text("Join"), button:has-text("Start")');
+    }
+
+    async clickContinueButton() {
+        await this.locator.continueButton.click();
+    }
     async closeEdge() {
         await this.edgeContext.close();
     }
