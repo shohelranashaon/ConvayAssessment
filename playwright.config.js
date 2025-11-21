@@ -15,8 +15,8 @@ export default defineConfig({
   use: {
     trace: 'on-first-retry',
 
-   //Add WebRTC permissions
-    permissions: ['microphone', 'camera'],
+   //Add WebRTC and Clipboard permissions
+    permissions: ['microphone', 'camera', 'clipboard-read', 'clipboard-write'],
 
     // Add WebRTC fake device arguments
     launchOptions: {
