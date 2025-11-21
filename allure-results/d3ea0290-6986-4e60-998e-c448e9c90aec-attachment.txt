@@ -1,0 +1,2 @@
+Permission Check: Microphone permission: granted
+Mic Test: Mic button not found or status unknown

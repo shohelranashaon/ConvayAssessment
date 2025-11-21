@@ -1,12 +1,12 @@
 import { SignIn } from '../pages/signInPage';
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { Home } from '../pages/homePage';
 import { Meeting } from '../pages/meetingPage';
 import { EdgeMeetingPage } from '../pages/edgeMeetingPage';
 
 test.describe.configure({ mode: "serial" });
 
-test.describe("Convay Meeting Automation", () => {
+test.describe("Convay Meeting Automation - Chrome Host & Edge Participant", () => {
   let context, page, signIn, home, meeting, edgeMeeting;
 
   test.beforeAll(async ({ browser }) => {
@@ -21,7 +21,7 @@ test.describe("Convay Meeting Automation", () => {
     
   });
 
-    test("Login Successfully and Copy Meeting Invite Link", async()=>{
+    test("Host: Login Successfully and Copy Meeting Invite Link", async()=>{
         await signIn.enterUserEmail("tipili7552@gyknife.com");
         await signIn.enterPassword("Abcd1234+");
         await signIn.buttonSignIn();
@@ -39,22 +39,31 @@ test.describe("Convay Meeting Automation", () => {
 
      });
 
-    test("Open Meeting Link in Microsoft Edge using POM and join the meeting as a client", async () => {
+    test("Join Meeting as Participant", async () => {
+        await edgeMeeting.joinMeeting("Mic Test User");
+    });
 
-        await edgeMeeting.openEdge();
-        await edgeMeeting.pasteInSearchField();
-        await edgeMeeting.pressEnterToNavigate();
-        await edgeMeeting.enterClientName("Imon");
-        await edgeMeeting.clickContinueButton();
-        await page.pause();
+    test("Verify Mic Functionality", async () => {
+        const permission = await edgeMeeting.checkPermissions();
+        console.log(permission.message);
+        expect(permission.passed).toBe(true);
+        const micTest = await edgeMeeting.testMic();
+        console.log(micTest.message);
+        expect(micTest.passed).toBe(true);
+        console.log('MIC TEST PASSED');
+        // await page.pause();
     });
 
     
 
-        //  test.afterAll("Logout Successfully",async () => {
-        //     await inventory.clickButtonLogout();
-        //     // await page.pause();
-//   });
+  test.afterAll(async () => {
+    if (edgeMeeting) {
+      await edgeMeeting.close();
+    }
+    if (context) {
+      await context.close();
+    }
+  });
  
 });
 

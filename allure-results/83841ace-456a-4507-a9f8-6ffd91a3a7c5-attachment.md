@@ -1,0 +1,83 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - img [ref=e6] [cursor=pointer]
+    - generic [ref=e8]:
+      - link "SO Shohel's Organization" [ref=e10] [cursor=pointer]:
+        - /url: /home
+        - generic [ref=e11]: SO
+        - generic [ref=e12]: Shohel's Organization
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: /home
+            - img [ref=e17]
+            - text: Home
+        - listitem [ref=e20]:
+          - link "Meeting Management" [ref=e21] [cursor=pointer]:
+            - /url: /meeting-management
+            - img [ref=e22]
+            - text: Meeting Management
+        - listitem [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e30]: Admin Settings
+            - img [ref=e32]
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "Manage Users" [ref=e36]:
+                - /url: /user-management
+            - listitem [ref=e37]:
+              - link "Manage Organization" [ref=e38]:
+                - /url: /organization
+  - generic [ref=e39]:
+    - navigation [ref=e40]:
+      - list [ref=e42]:
+        - listitem [ref=e43] [cursor=pointer]:
+          - generic [ref=e44]:
+            - generic [ref=e46]: SR
+            - generic [ref=e47]:
+              - text: Shohel Rana Shaon
+              - img [ref=e48]
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56] [cursor=pointer]: Meeting Ongoing
+          - heading "Convay Host" [level=2] [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]: PMI
+            - generic [ref=e60]: 8666 2335 3474
+          - paragraph [ref=e61]: Schedule or Start an Instant Meeting
+          - generic [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e64]
+            - img [ref=e70] [cursor=pointer]
+            - img [ref=e75] [cursor=pointer]
+          - button "Back to Meeting" [ref=e88] [cursor=pointer]:
+            - img [ref=e89]
+            - text: Back to Meeting
+        - generic [ref=e91]:
+          - generic [ref=e92]: +
+          - paragraph [ref=e93]: You can join a meeting with meeting ID or URL
+          - generic [ref=e94] [cursor=pointer]: Join
+      - generic [ref=e97]:
+        - generic [ref=e98]: Upcoming Meetings
+        - generic [ref=e103]: No Upcoming meeting!
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - link "Open Scheduler" [ref=e106] [cursor=pointer]:
+            - /url: /calendar/scheduler
+            - generic [ref=e107]: Open Scheduler
+          - generic [ref=e108]:
+            - generic [ref=e109]: "2025"
+            - generic [ref=e110]: "21"
+            - generic [ref=e111]:
+              - text: November
+              - text: Friday
+        - generic [ref=e112]:
+          - generic [ref=e113]: Invitations
+          - generic [ref=e116]: You have no invitation!
+```

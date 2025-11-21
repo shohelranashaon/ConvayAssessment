@@ -1,0 +1,3 @@
+Mic permission: granted
+Mic works: muted → unmuted
+MIC TEST PASSED

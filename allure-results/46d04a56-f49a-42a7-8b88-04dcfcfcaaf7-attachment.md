@@ -1,0 +1,96 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - region "We value your privacy" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Close" [ref=e4] [cursor=pointer]:
+        - img "Close" [ref=e5]
+      - generic [ref=e6]:
+        - heading "We value your privacy" [level=1] [ref=e7]
+        - generic [ref=e8]:
+          - paragraph [ref=e10]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+          - generic [ref=e11]:
+            - button "Customize" [ref=e12] [cursor=pointer]
+            - button "Reject All" [ref=e13] [cursor=pointer]
+            - button "Accept All" [ref=e14] [cursor=pointer]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - img [ref=e19] [cursor=pointer]
+      - generic [ref=e21]:
+        - link "SO Shohel's Organization" [ref=e23] [cursor=pointer]:
+          - /url: /home
+          - generic [ref=e24]: SO
+          - generic [ref=e25]: Shohel's Organization
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "Home" [ref=e29] [cursor=pointer]:
+              - /url: /home
+              - img [ref=e30]
+              - text: Home
+          - listitem [ref=e33]:
+            - link "Meeting Management" [ref=e34] [cursor=pointer]:
+              - /url: /meeting-management
+              - img [ref=e35]
+              - text: Meeting Management
+          - listitem [ref=e37] [cursor=pointer]:
+            - generic [ref=e38]:
+              - img [ref=e39]
+              - generic [ref=e43]: Admin Settings
+              - img [ref=e45]
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "Manage Users" [ref=e49]:
+                  - /url: /user-management
+              - listitem [ref=e50]:
+                - link "Manage Organization" [ref=e51]:
+                  - /url: /organization
+    - generic [ref=e52]:
+      - navigation [ref=e53]:
+        - list [ref=e55]:
+          - listitem [ref=e56] [cursor=pointer]:
+            - generic [ref=e57]:
+              - generic [ref=e59]: SR
+              - generic [ref=e60]:
+                - text: Shohel Rana Shaon
+                - img [ref=e61]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69] [cursor=pointer]: Meeting Ongoing
+            - heading "Convay Host" [level=2] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: PMI
+              - generic [ref=e73]: 8666 2335 3474
+            - paragraph [ref=e74]: Schedule or Start an Instant Meeting
+            - generic [ref=e75]:
+              - link [ref=e76] [cursor=pointer]:
+                - /url: /calendar
+                - img [ref=e77]
+              - img [ref=e83] [cursor=pointer]
+              - img [ref=e88] [cursor=pointer]
+            - button "Back to Meeting" [ref=e101] [cursor=pointer]:
+              - img [ref=e102]
+              - text: Back to Meeting
+          - generic [ref=e104]:
+            - generic [ref=e105]: +
+            - paragraph [ref=e106]: You can join a meeting with meeting ID or URL
+            - generic [ref=e107] [cursor=pointer]: Join
+        - generic [ref=e110]:
+          - generic [ref=e111]: Upcoming Meetings
+          - generic [ref=e116]: No Upcoming meeting!
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - link "Open Scheduler" [ref=e119] [cursor=pointer]:
+              - /url: /calendar/scheduler
+              - generic [ref=e120]: Open Scheduler
+            - generic [ref=e121]:
+              - generic [ref=e122]: "2025"
+              - generic [ref=e123]: "22"
+              - generic [ref=e124]:
+                - text: November
+                - text: Saturday
+          - generic [ref=e125]:
+            - generic [ref=e126]: Invitations
+            - generic [ref=e129]: You have no invitation!
+```

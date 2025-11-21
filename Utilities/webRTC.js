@@ -1,13 +1,9 @@
-
+export { WebRTC };
 
 class WebRTC {
-
-  // Permissions required for Convay meeting
   static getPermissions() {
     return ['camera', 'microphone'];
   }
-
-  // Chrome arguments needed for WebRTC automation
   static getChromeArgs() {
     return [
       '--use-fake-device-for-media-stream',
@@ -25,6 +21,16 @@ class WebRTC {
       args: WebRTC.getChromeArgs(),
     });
   }
+
+  // Launch Microsoft Edge with WebRTC support
+  static async launchEdge(headless = false) {
+    const { chromium } = require('@playwright/test');
+    return await chromium.launch({
+      channel: 'msedge',
+      headless: headless,
+      args: WebRTC.getChromeArgs()
+    });
+  }
 }
 
-export { WebRTC };
+

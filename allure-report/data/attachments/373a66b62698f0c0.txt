@@ -1,0 +1,3 @@
+Initial mic status: unmuted
+Mic status after toggle: unmuted
+Mic status successfully changed from unmuted to unmuted
