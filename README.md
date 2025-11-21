@@ -1,10 +1,10 @@
 # ConvayAssessment
-Automation for Conway meeting platform using Playwright. Covers host meeting creation, link sharing, participant join from another browser, and mic mute/unmute status checks.
+This automation project for the Conway Meeting Platform uses Playwright (JavaScript) to validate host meeting creation, link sharing, participant joining from another browser, and essential audio checks such as mic mute/unmute and WebRTC-based microphone permission verification..
 
 # Convay Meeting Automation
 
-Automation Testing on the [Convay](https://www.convay.com/)  
-This project automates login, add-to-cart, and checkout flows using **Playwright**, **JavaScript**, and the **Page Object Model (POM)** pattern.
+Automation Testing for the [Convay](https://www.convay.com/)  
+This project validates core meeting flows using **Playwright**, **JavaScript**, and the **Page Object Model (POM)** pattern.
 
 ---
 
@@ -22,13 +22,14 @@ This project automates login, add-to-cart, and checkout flows using **Playwright
 
 ## Documentation
 
-This is a **Page Object Model (POM)** based **automation framework** developed for the Convay Meeting mic/sound test.  
-Every page has its own class,  and all **locators** are managed centrally inside a single `locators.js` file.
+This is a **Page Object Model (POM)** based **automation framework** developed for the Convay Meeting mic/sound test.Every page has its own class,  and all **locators** are managed centrally inside a single `locators.js` file.
 
-**Framework Highlights:**
-- Page Object Model (POM) Structure  
-- Centralized locator management   
-- Allure report generation after every run  
+- **Page Object Model (POM) Architecture**  
+- **Centralized Locator Management**  
+- **Allure Report Generation**  
+- Modular folder structure with clear separation of concerns 
+- Reusable utilities for WebRTC, mic checks, waits, and custom assertions  
+- Cross-browser support: Chromium, Firefox, WebKit  
 ---
 
 ## Prerequisites
