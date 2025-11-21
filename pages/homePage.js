@@ -13,6 +13,7 @@ export class Home{
     }
 
     async clickButtonStart(){
+        await this.page.waitForTimeout(2000);
         await this.locator.startButton.click();
     }
 
